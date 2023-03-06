@@ -37,16 +37,18 @@ navbar_burger.addEventListener("click", onClickBtn);
 // Feature 3
 
 // var card = document.getElementsByClassName("card mb-4 box-shadow")[0]
-var card = document.querySelector("body > main > div > div > div > div:nth-child(1) > div");
-
+var card = document.querySelector("body > main > div > div > div > div:nth-child(1) > div > div > p");
 console.log(card);
 
 // var edit = document.getElementsByClassName("btn btn-sm btn-outline-secondary")[0]
-var edit = card.querySelector("body > main > div > div > div > div:nth-child(1) > div > div > div > div > button.btn.btn-sm.btn-outline-secondary");
-
+var edit = document.querySelector("body > main > div > div > div > div:nth-child(1) > div > div > div > div > button.btn.btn-sm.btn-outline-secondary");
 console.log(edit)
 
-edit.style ="color: red"
+var onClickBtnEdit = function () {
+    card.style.color = "red"
+};
+
+edit.addEventListener("click", onClickBtnEdit)
 
 // Feature 4
 
