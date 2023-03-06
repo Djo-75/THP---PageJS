@@ -52,3 +52,40 @@ edit.addEventListener("click", onClickBtnEdit)
 
 // Feature 4
 
+var card2 = document.querySelector("body > main > div > div > div > div:nth-child(2) > div > div > p");
+console.log(card2);
+
+var edit2 = document.querySelector("body > main > div > div > div > div:nth-child(2) > div > div > div > div > button.btn.btn-sm.btn-outline-secondary");
+console.log(edit2)
+
+var onClickBtnEdit = function () {
+    card2.style.color = "green"
+};
+
+edit2.addEventListener("click", function() {
+
+    if (card2.style.color === 'green'){
+        card2.style.color = '' ;
+        }
+    else {
+        card2.style.color = 'green'
+    }
+})
+
+// Feature 5
+
+
+
+// Feature 6
+
+
+
+// Feature 7
+
+
+
+// Feature 8
+
+
+
+// Feature 9
