@@ -74,7 +74,28 @@ edit2.addEventListener("click", function() {
 
 // Feature 5
 
+var navbar = document.querySelector("body > header > div.navbar.navbar-dark.bg-dark.box-shadow > div")
+console.log(navbar)
 
+var link = document.querySelector("head > link")
+console.log(link)
+
+const linkElement = document.querySelector('link[rel="stylesheet"]');
+
+var onClickNavbar = linkElement.disabled = false;
+
+// Disable the link element by setting its disabled property to true
+
+navbar.addEventListener("click", function() {
+    
+    if (linkElement.disabled === false) {
+        linkElement.disabled = true;
+    }
+    else {
+        linkElement.disabled = false 
+    }
+ }
+)
 
 // Feature 6
 
