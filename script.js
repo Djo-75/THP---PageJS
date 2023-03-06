@@ -99,6 +99,22 @@ navbar.addEventListener("click", function() {
 
 // Feature 6
 
+var view = document.querySelector("body > main > div > div > div > div:nth-child(1) > div > div > div > div > button.btn.btn-sm.btn-success");
+console.log(view);
+
+
+var onMouseMove = function(event) {
+    view.style.fontSize = "20%";   
+};
+
+view.addEventListener("mousemove", function() {
+    if (view.style.fontSize === "") {
+      view.style.fontSize = "20%";
+    } else {
+      view.style.fontSize = "";
+    }
+  });
+
 
 
 // Feature 7
@@ -110,3 +126,4 @@ navbar.addEventListener("click", function() {
 
 
 // Feature 9
+
